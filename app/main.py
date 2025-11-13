@@ -1,7 +1,7 @@
 def format_linter_error(error: dict) -> dict:
     return {
-        nowy: error[stary]
-        for nowy, stary in {
+        key: error[value]
+        for key, value in {
             "line": error["line_number"],
             "column": error["column_number"],
             "message": error["text"],
